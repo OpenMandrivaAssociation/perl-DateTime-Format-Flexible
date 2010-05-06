@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    A module that try very hard to parse string into DateTime object
 License:    GPL+ or Artistic
@@ -22,6 +22,7 @@ BuildRequires: perl(Class::Factory::Util)
 BuildRequires: perl(DateTime::Format::Strptime)
 # not autodetect, for some reason
 Requires:  perl(Class::Factory::Util)
+Requires:  perl(DateTime::Format::Strptime)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
