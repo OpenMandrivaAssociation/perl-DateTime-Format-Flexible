@@ -17,6 +17,8 @@ BuildRequires: perl(DateTime::TimeZone)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Module::Pluggable)
 BuildRequires: perl(Test::Simple)
+# for test
+BuildRequires: perl(Class::Factory::Util)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
