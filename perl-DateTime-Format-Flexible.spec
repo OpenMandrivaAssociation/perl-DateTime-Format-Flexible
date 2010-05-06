@@ -19,6 +19,7 @@ BuildRequires: perl(Module::Pluggable)
 BuildRequires: perl(Test::Simple)
 # for test
 BuildRequires: perl(Class::Factory::Util)
+BuildRequires: perl(DateTime::Format::Strptime)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
