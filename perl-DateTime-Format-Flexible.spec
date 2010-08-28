@@ -11,20 +11,22 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Class::Factory::Util)
 BuildRequires: perl(DateTime)
 BuildRequires: perl(DateTime::Format::Builder)
+BuildRequires: perl(DateTime::Format::Strptime)
 BuildRequires: perl(DateTime::TimeZone)
 BuildRequires: perl(List::MoreUtils)
 BuildRequires: perl(Module::Pluggable)
 BuildRequires: perl(Test::Simple)
-# for test
-BuildRequires: perl(Class::Factory::Util)
-BuildRequires: perl(DateTime::Format::Strptime)
+BuildRequires: perl(Test::MockTime)
+
+BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
 # not autodetect, for some reason
 Requires:  perl(Class::Factory::Util)
 Requires:  perl(DateTime::Format::Strptime)
-BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 If you have ever had to use a program that made you type in the date a
@@ -39,7 +41,6 @@ parse it into a DateTime object.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -57,5 +58,3 @@ rm -rf %buildroot
 %doc META.yml README Changes LICENSE
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
