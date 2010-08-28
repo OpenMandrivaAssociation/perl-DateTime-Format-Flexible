@@ -1,9 +1,9 @@
 %define upstream_name    DateTime-Format-Flexible
-%define upstream_version 0.15
+%define upstream_version 0.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    A module that try very hard to parse string into DateTime object
 License:    GPL+ or Artistic
