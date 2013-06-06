@@ -1,15 +1,14 @@
 %define upstream_name    DateTime-Format-Flexible
-%define upstream_version 0.19
-
+%define upstream_version 0.25
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%perl_convert_version 0.25
+Release:	1
 
 Summary:	A module that try very hard to parse string into DateTime object
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DateTime/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DateTime/DateTime-Format-Flexible-0.25.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Factory::Util)
@@ -95,3 +94,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu May 06 2010 cpan2dist 0.15-1mdv
 - initial mdv release, generated with cpan2dist
+
