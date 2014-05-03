@@ -1,4 +1,5 @@
 removed_sources:
   DateTime-Format-Flexible-0.19.tar.gz: 0da37260225d5873e37e89ac2e14f13221cddad2
-sources:
   DateTime-Format-Flexible-0.25.tar.gz: 625a2db35379f2b813a7ba3cbe3dce02e52d9e28
+sources:
+  DateTime-Format-Flexible-0.26.tar.gz: 214d45230048c9e5f58dc51b84d2475e191d7efd
