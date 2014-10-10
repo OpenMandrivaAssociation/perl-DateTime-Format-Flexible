@@ -2,7 +2,7 @@
 %define upstream_version 0.26
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 
 Summary:	A module that try very hard to parse string into DateTime object
 
